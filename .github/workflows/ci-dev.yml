@@ -23,7 +23,7 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pyton -m pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install pytest
 
       - name: Executar testes
