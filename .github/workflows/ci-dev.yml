@@ -29,5 +29,5 @@ jobs:
       - name: Lint com Ruff
         run: ruff check .
 
-      - name: Executar testes
+      - name: Executar testes com coverage
         run: pytest
