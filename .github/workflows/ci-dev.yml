@@ -29,7 +29,7 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Verificar segredos (gitleaks)
-        uses: gitleaks/gitleaks-actions@v3
+        uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
