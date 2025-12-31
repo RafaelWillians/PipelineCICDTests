@@ -4,7 +4,16 @@
         {
             "Effect": "Allow",
             "Principal": {
-                "Federated": "arn:aws:iam::<ACCOUNT_ID>:oidc-provider/<>"
+                "Federated": "arn:aws:iam::<ACCOUNT_ID>:oidc-provider/<PROVIDER_NAME>"
+            },
+            "Action": "sts.AssumeRoleWithWebIdentity",
+            "Condition": {
+                "StringEquals": {
+                    "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+                },
+                "StringLike": {
+                    "token.actions.githubusercontent.com:sub": "repo:<GITHUB_USERNAME>/<GITHUB_REPO>:ref:refs/heads/test"
+                }
             }
         }
     ]
