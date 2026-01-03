@@ -13,7 +13,8 @@
 			"bierner.github-markdown-preview",
 			"hashicorp.terraform",
 			"ritwickdey.LiveServer",
-			"hediet.vscode-drawio"
+			"hediet.vscode-drawio",
+			"ms-python.python"
 		]
 	  }
 	},	
