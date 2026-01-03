@@ -9,7 +9,7 @@
         "lambda:CreateFunction",
         "iam:PassRole"
       ],
-      "Resource": "arn:aws:lambda:${{ secrets.AWS_REGION }}:${{ secrets.AWS_ACCOUNT_ID }}:function:hello_world"
+      "Resource": "arn:aws:lambda:${{ vars.AWS_REGION }}:${{ secrets.AWS_ACCOUNT_ID }}:function:hello_world"
     }
   ]
 }

@@ -38,3 +38,9 @@ jobs:
 
       - name: Executar testes com coverage
         run: pytest
+
+      - name: Configurar credencial AWS (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.AWS_OIDC_ROLE }}
+          aws-region: ${{ vars.AWS_REGION }}
