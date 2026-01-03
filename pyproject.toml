@@ -1,0 +1,10 @@
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=lambdas --cov-report=term-missing --cov-fail-under=80"
+testpaths = ["tests"]
