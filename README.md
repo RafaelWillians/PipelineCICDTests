@@ -1,8 +1,6 @@
-# AWS Repo Template
+# PipelineCICDTests
 
-Repo template for use with AWS CLI, compatible with Codespaces, GitPod and DevContainer extension (for VSCode).
-
-Template de repositório para usar com AWS CLI, compatível com Codespaces, GitPod e extensão DevContainer (para VSCode).
+Repositório para criar Pipeline CI/CD para implantação de AWS Lambda.
 
 ## Extensões
 * AWS CLI
@@ -14,3 +12,4 @@ Template de repositório para usar com AWS CLI, compatível com Codespaces, Git
 * Hashicorp Terraform
 * Live Server
 * GitHub CLI
+* Python
