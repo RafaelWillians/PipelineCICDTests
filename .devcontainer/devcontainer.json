@@ -2,7 +2,10 @@
 	"name": "Codespace Main",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",	
 	"features": {
-	  "ghcr.io/devcontainers/features/github-cli:1": {}
+	  "ghcr.io/devcontainers/features/github-cli:1": {},
+	  "ghcr.io/devcontainers/features/python:1": {
+		"version": "3.12"
+	  }
 	},
 	"customizations": {
 	  "vscode": {
@@ -13,7 +16,8 @@
 			"bierner.github-markdown-preview",
 			"hashicorp.terraform",
 			"ritwickdey.LiveServer",
-			"hediet.vscode-drawio"
+			"hediet.vscode-drawio",
+			"ms-python.python"
 		]
 	  }
 	},	
